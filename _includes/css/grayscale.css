@@ -37,11 +37,13 @@ p {
 }
 
 @media(min-width:767px) {
+    /*
     p {
         margin: 0 0 35px;
         font-size: 20px;
         line-height: 1.6;
     }
+    */
 }
 
 a {
@@ -396,12 +398,18 @@ img.scroll-down {
     margin-bottom: 20px;
 }
 
+h2.about-title {
+    font-size: 14pt;
+}
+
 .left-text-column {
+    font-size: 12pt;
     line-height: 0.7em;
     vertical-align: right;
     text-align: left;
 }
 .right-text-column {
+    font-size: 12pt;
     vertical-align: left;
     text-align: left;
 }
