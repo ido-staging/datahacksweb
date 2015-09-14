@@ -167,6 +167,7 @@ function init() {
     //var mapElement = document.getElementById('map');
 
     // Create the Google Map using out element and options defined above
+    /*
     var map = new google.maps.Map(mapElement, mapOptions);
 
     // Custom Map Marker Icon - Customize the map-marker.png file to customize your icon
@@ -177,4 +178,5 @@ function init() {
         map: map,
         icon: image
     });
+    */
 }
