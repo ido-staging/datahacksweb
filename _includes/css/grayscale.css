@@ -394,6 +394,12 @@ img.scroll-down {
 
   padding-top: 100px;
 
+  height: 100%;
+  width: 100%;
+  border: 0;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+
 }
 
 .about-icon {
