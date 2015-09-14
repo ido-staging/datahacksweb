@@ -25,7 +25,7 @@ h5,
 h6 {
     margin: 0 0 35px;
     text-transform: uppercase;
-    font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-family: 'Roboto', sans-serif,Helvetica,Arial,sans-serif;
     font-weight: 700;
     letter-spacing: 1px;
 }
@@ -65,7 +65,7 @@ a:focus {
     margin-bottom: 0;
     border-bottom: 1px solid rgba(255,255,255,.3);
     text-transform: uppercase;
-    font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-family: 'Roboto', sans-serif,Helvetica,Arial,sans-serif;
     background-color: {{ site.color.primary-dark }};
 }
 
@@ -89,7 +89,7 @@ a:focus {
 }
 
 .navbar-custom a {
-    color: #fff;
+    color: #00b0b7;
 }
 
 .navbar-custom .nav li.active {
@@ -287,7 +287,7 @@ a:focus {
 
 .btn {
     text-transform: uppercase;
-    font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-family: 'Roboto', sans-serif,Helvetica,Arial,sans-serif;
     font-weight: 400;
     -webkit-transition: all .3s ease-in-out;
     -moz-transition: all .3s ease-in-out;
@@ -364,4 +364,28 @@ img::-moz-selection {
 
 body {
     webkit-tap-highlight-color: rgba(255,255,255,.2);
+}
+
+img.brand-image {
+    margin: 120px 0px 80px 0px;
+}
+
+img.scroll-down {
+    margin-bottom: 40px;
+}
+
+.gradient {
+
+  /* can be treated like a fallback */
+  background-color: #f3f8ff;
+
+  /* will be "on top", if browser supports it */
+  background-image: linear-gradient(to right,#002836, #c43a45);
+
+  /* these will reset other properties, like background-position, but it does know what you mean */
+  background: #f3f8ff;
+  background: linear-gradient(to right,#002836, #c43a45);
+
+  color: #fff;
+
 }

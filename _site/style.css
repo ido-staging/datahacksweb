@@ -14,7 +14,7 @@ body {
     height: 100%;
     font-family: 'Roboto', sans-serif,Helvetica,Arial,sans-serif;
     color: #002836;
-    background-color: #00b0b7;
+    background-color: #f3f8ff;
 }
 
 html {
@@ -30,7 +30,7 @@ h5,
 h6 {
     margin: 0 0 35px;
     text-transform: uppercase;
-    font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-family: 'Roboto', sans-serif,Helvetica,Arial,sans-serif;
     font-weight: 700;
     letter-spacing: 1px;
 }
@@ -50,7 +50,7 @@ p {
 }
 
 a {
-    color: #219ab3;
+    color: #00b0b7;
     -webkit-transition: all .2s ease-in-out;
     -moz-transition: all .2s ease-in-out;
     transition: all .2s ease-in-out;
@@ -70,8 +70,8 @@ a:focus {
     margin-bottom: 0;
     border-bottom: 1px solid rgba(255,255,255,.3);
     text-transform: uppercase;
-    font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
-    background-color: #00b0b7;
+    font-family: 'Roboto', sans-serif,Helvetica,Arial,sans-serif;
+    background-color: #f3f8ff;
 }
 
 .navbar-custom .navbar-brand {
@@ -94,7 +94,7 @@ a:focus {
 }
 
 .navbar-custom a {
-    color: #fff;
+    color: #00b0b7;
 }
 
 .navbar-custom .nav li.active {
@@ -128,7 +128,7 @@ a:focus {
 
     .top-nav-collapse {
         padding: 0;
-        background-color: #00b0b7;
+        background-color: #f3f8ff;
     }
 
     .navbar-custom.top-nav-collapse {
@@ -143,8 +143,8 @@ a:focus {
     padding: 100px 0;
     text-align: center;
     color: #fff;
-    background: url(/img/logo.png) no-repeat bottom center scroll;
-    background-color: #00b0b7;
+    /*background: url(/datahacksweb/img/logo.png) no-repeat bottom center scroll;*/
+    background-color: #f3f8ff;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     background-size: cover;
@@ -262,7 +262,7 @@ a:focus {
     padding: 50px 0;
     color: #fff;
     background: url(/img/downloads-bg.jpg) no-repeat center center scroll;
-    background-color: #00b0b7;
+    background-color: #f3f8ff;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     background-size: cover;
@@ -292,7 +292,7 @@ a:focus {
 
 .btn {
     text-transform: uppercase;
-    font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-family: 'Roboto', sans-serif,Helvetica,Arial,sans-serif;
     font-weight: 400;
     -webkit-transition: all .3s ease-in-out;
     -moz-transition: all .3s ease-in-out;
@@ -300,17 +300,17 @@ a:focus {
 }
 
 .btn-default {
-    border: 1px solid #219ab3;
-    color: #219ab3;
+    border: 1px solid #00b0b7;
+    color: #00b0b7;
     background-color: transparent;
 }
 
 .btn-default:hover,
 .btn-default:focus {
-    border: 1px solid #219ab3;
+    border: 1px solid #00b0b7;
     outline: 0;
-    color: #00b0b7;
-    background-color: #219ab3;
+    color: #f3f8ff;
+    background-color: #00b0b7;
 }
 
 ul.banner-social-buttons {
@@ -369,4 +369,28 @@ img::-moz-selection {
 
 body {
     webkit-tap-highlight-color: rgba(255,255,255,.2);
+}
+
+img.brand-image {
+    margin: 120px 0px 80px 0px;
+}
+
+img.scroll-down {
+    margin-bottom: 40px;
+}
+
+.gradient {
+
+  /* can be treated like a fallback */
+  background-color: #f3f8ff;
+
+  /* will be "on top", if browser supports it */
+  background-image: linear-gradient(to right,#002836, #c43a45);
+
+  /* these will reset other properties, like background-position, but it does know what you mean */
+  background: #f3f8ff;
+  background: linear-gradient(to right,#002836, #c43a45);
+
+  color: #fff;
+
 }
