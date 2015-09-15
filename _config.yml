@@ -1,8 +1,8 @@
 # Site settings
 title: DataHack
-email: contact@datahacks-il.com 
+email: contact@datahack-il.com 
 baseurl: ''
-description: "A website for the DataHacks hackathon, Nov 2015."
+description: "A website for the DataHack hackathon, Nov 2015."
 
 # Color settings (hex-codes without the leading hash-tag)
 color:
@@ -10,7 +10,7 @@ color:
   links: '#00b0b7'
 
 # Footer settings
-footer: DataHacks
+footer: DataHack
 
 # Social networks usernames (many more available: google-plus, flickr, dribbble, pinterest, instagram, tumblr, linkedin, etc.)
 social:
