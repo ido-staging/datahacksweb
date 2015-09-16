@@ -398,8 +398,6 @@ img.scroll-down {
   color: #fff;
 
   padding-top: 100px;
-
-  height: 100%;
   width: 100%;
   border: 0;
   background-repeat: no-repeat;
@@ -426,4 +424,8 @@ h2.about-title {
     font-size: 12pt;
     vertical-align: left;
     text-align: left;
+}
+
+.contact-text {
+    min-height: 500px;
 }
