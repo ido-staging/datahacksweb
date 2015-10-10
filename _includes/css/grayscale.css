@@ -457,6 +457,7 @@ h2.about-title {
 
 .bookmark {
     display:inline;
+    position: relative;
     margin-bottom: 0;
     padding: 10px 15px 0 15px;
     border: 0px;
@@ -472,4 +473,25 @@ h2.about-title {
 
 .display-mobile {
     display: none;
+}
+
+.bookmark::before {
+    content: '';
+    position: absolute;
+    bottom: -38px;
+    left: -35px;
+    width: 35px;
+    height: 38px;
+    background: url("img/shadow.png");
+}
+
+.bookmark::after {
+    transform: scaleX(-1);
+    content: '';
+    position: absolute;
+    bottom: -38px;
+    right: -35px;
+    width: 35px;
+    height: 38px;
+    background: url("img/shadow.png");
 }

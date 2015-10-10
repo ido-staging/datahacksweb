@@ -223,7 +223,7 @@ a:focus {
     -moz-animation-timing-function: linear;
 }
 
-@-webkit-keyframes pulse {    
+@-webkit-keyframes pulse {
     0 {
         -webkit-transform: scale(1);
         transform: scale(1);
@@ -240,7 +240,7 @@ a:focus {
     }
 }
 
-@-moz-keyframes pulse {    
+@-moz-keyframes pulse {
     0 {
         -moz-transform: scale(1);
         transform: scale(1);
@@ -438,12 +438,12 @@ h2.about-title {
 }
 
 .color-cyan {
-    background-color: #00b0b7;
+    background-color: #1F9599;
     width: 100%;
 }
 
 .color-navyblue {
-    background-color: #002386;
+    background-color: #002836;
     width: 100%;
 }
 
@@ -462,8 +462,9 @@ h2.about-title {
 
 .bookmark {
     display:inline;
+    position: relative;
     margin-bottom: 0;
-    padding: 10px 15px 0 15px; 
+    padding: 10px 15px 0 15px;
     border: 0px;
     /*border-radius: 10px;*/
     border-top-left-radius: 15px;
@@ -477,4 +478,25 @@ h2.about-title {
 
 .display-mobile {
     display: none;
+}
+
+.bookmark::before {
+    content: '';
+    position: absolute;
+    bottom: -38px;
+    left: -35px;
+    width: 35px;
+    height: 38px;
+    background: url("img/shadow.png");
+}
+
+.bookmark::after {
+    transform: scaleX(-1);
+    content: '';
+    position: absolute;
+    bottom: -38px;
+    right: -35px;
+    width: 35px;
+    height: 38px;
+    background: url("img/shadow.png");
 }
