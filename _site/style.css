@@ -281,7 +281,8 @@ a:focus {
 
 @media(min-width:767px) {
     .content-section {
-        padding-top: 200px;
+        padding-top: 100px;
+        padding-bottom: 50px;
     }
 
     .download-section {
@@ -428,4 +429,52 @@ h2.about-title {
 
 .contact-text {
     min-height: 500px;
+}
+
+.color-blue {
+    background-color: #f3f8ff;
+    color: white;
+    width: 100%;
+}
+
+.color-cyan {
+    background-color: #00b0b7;
+    width: 100%;
+}
+
+.color-navyblue {
+    background-color: #002386;
+    width: 100%;
+}
+
+.color-red {
+    background-color: #c43a45;
+    width: 100%;
+}
+
+.text-light {
+    color: #fff;
+}
+
+.text-dark {
+    color: #002836;
+}
+
+.bookmark {
+    display:inline;
+    margin-bottom: 0;
+    padding: 10px 15px 0 15px; 
+    border: 0px;
+    /*border-radius: 10px;*/
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    width: 300px;
+}
+
+.no-margins {
+    margin: 0;
+}
+
+.display-mobile {
+    display: none;
 }
