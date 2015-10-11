@@ -47,7 +47,7 @@ function init() {
         // Disables the default Google Maps UI components
         disableDefaultUI: true,
         scrollwheel: false,
-        draggable: false,
+        draggable: true,
 
         // How you would like to style the map. 
         // This is where you would paste any style found on Snazzy Maps.
@@ -176,8 +176,19 @@ function init() {
     var beachMarker = new google.maps.Marker({
         position: myLatLng,
         map: map,
-        icon: image,
-        title: 'בית האנסן, רח\' גדליהו אלון 14 ירושלים'
+        icon: image
     });
 
+    var contentString = '<div id="content">'+
+                        '<p>בית האנסן, רח\' גדליהו אלון 14 ירושלים</p>'+
+                        '</div>';
+
+    var infowindow = new google.maps.InfoWindow({
+        content: contentString
+    });
+
+    beachMarker.addListener('click', function() {
+        infowindow.open(map, marker);
+    });
+     
 }
