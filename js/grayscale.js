@@ -188,7 +188,7 @@ function init() {
     });
 
     beachMarker.addListener('click', function() {
-        infowindow.open(map, marker);
+        infowindow.open(map, beachMarker);
     });
      
 }
