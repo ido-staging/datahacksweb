@@ -283,6 +283,28 @@
             </div>
         </div>
     </section>
+      <!-- Map Section -->
+  <div id="map"></div>
+    <div class="cloudwok-embed" data-show-email="y" data-wokid="rKRV">
+  <div class="cloudwok-upload-files"></div>
+  <form class="cloudwok-upload">
+    <div class="cloudwok-dropzone"></div>
+  </form>
+  <div class="cloudwok-download-files"></div>
+  <div class="cloudwok-upload-message"></div>
+</div>
+<script>
+  (function(window, document) {
+    var loader = function() {
+      var script = document.createElement("script"),
+      tag = document.getElementsByTagName("script")[0];
+      script.src = "https://www.cloudwok.com/cdn-vassets/javascripts/cw.js";
+      tag.parentNode.insertBefore(script, tag);
+    };
+    window.addEventListener ? window.addEventListener("load", loader, false) :
+    window.attachEvent("onload", loader);
+  })(window, document);
+</script>
         <!-- Footer -->
     <footer>
         <div class="container text-center">
@@ -300,7 +322,7 @@
     <script src="/datahacksweb/js/jquery.easing.min.js"></script>
 
     <!-- Google Maps API Key - Use your own API key to enable the map feature. More information on the Google Maps API can be found at https://developers.google.com/maps/ -->
-    <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBssa10Xr1n33c_O9WgjbJWswAJvd1KBBs&sensor=false"></script>
+    <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCPIhxemW6n-53GrUN4X0Cjfq_Yc5Qf-XE&sensor=false"></script>
 
     <!-- Custom Theme JavaScript -->
     <script src="/datahacksweb/js/grayscale.js"></script>
