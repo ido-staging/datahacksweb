@@ -42,12 +42,12 @@ function init() {
         zoom: 15,
 
         // The latitude and longitude to center the map (always required)
-        center: new google.maps.LatLng(40.6700, -73.9400), // New York
+        center: new google.maps.LatLng(31.769392, 35.217108), // Jerusalem
 
         // Disables the default Google Maps UI components
         disableDefaultUI: true,
         scrollwheel: false,
-        draggable: false,
+        draggable: true,
 
         // How you would like to style the map. 
         // This is where you would paste any style found on Snazzy Maps.
@@ -164,20 +164,31 @@ function init() {
     // Get the HTML DOM element that will contain your map 
     // We are using a div with id="map" seen below in the <body>
     
-    //TODO: add back if want map
-    //var mapElement = document.getElementById('map');
+    var mapElement = document.getElementById('map');
 
     // Create the Google Map using out element and options defined above
-    /*
+
     var map = new google.maps.Map(mapElement, mapOptions);
 
     // Custom Map Marker Icon - Customize the map-marker.png file to customize your icon
     var image = 'img/map-marker.png';
-    var myLatLng = new google.maps.LatLng(40.6700, -73.9400);
+    var myLatLng = new google.maps.LatLng(31.769392, 35.217108);
     var beachMarker = new google.maps.Marker({
         position: myLatLng,
         map: map,
         icon: image
     });
-    */
+
+    var contentString = '<div id="content">'+
+                        '<p>בית האנסן, רח\' גדליהו אלון 14 ירושלים</p>'+
+                        '</div>';
+
+    var infowindow = new google.maps.InfoWindow({
+        content: contentString
+    });
+
+    beachMarker.addListener('click', function() {
+        infowindow.open(map, beachMarker);
+    });
+     
 }
