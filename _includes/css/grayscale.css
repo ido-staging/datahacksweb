@@ -401,6 +401,10 @@ img.scroll-down {
 
 }
 
+.img-circle {
+    border-radius: 50%;
+}
+
 .about-icon {
     margin-bottom: 20px;
 }
