@@ -513,3 +513,7 @@ a.register-link {
 
 }
 
+.nav>li>a>img {
+    height: 20px;
+}
+
