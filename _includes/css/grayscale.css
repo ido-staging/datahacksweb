@@ -515,3 +515,18 @@ a.register-link {
 .nav>li>a>img {
     height: 20px;
 }
+
+/* ===================
+     Shay's additions
+   =====================*/
+
+.imgcontainer {
+    width: 200px;
+    height: 120px;
+}
+
+/* resize images */
+.imgcontainer img {
+    width: 100%;
+    height: auto;
+}
